@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+             <head>
+ <title>BMW MOTORSPORT </title>
+<style>
+                                body{
+background-color:  black;   /*   Simple black background  */
+                                          min-height  :
+100vh ;
+                                          color:  white   ;   /
+*  All text will be white */
+                                          }
+                                        /*  ensures all text remains white for visibility  */
+                           h1,h2,h3,p,u,b,li       {
+                                     color:  white   !
+important;
+} 
+       button{
+                 background-color:  #2b2b2b; /*dark grey background 
+                 color: white; /* white text */
+                 border:1px  solid #OOBFFF; /*blue outline*/
+                padding:10px 20px;
+                margin:10px;
+                border-radius:8px;
+               cursor:pointer;
+               font-weight:bold;
+              Letter-spacing:1px
+              transition:all 0.3s ease-in-out;
+              box-shadow:0 0  10px
+rgba(0,191,255,0.3); /* soft blue glow */
+               animation:glowPulse 2s infinite
+alternate; /* glow animation */
+}
+ 
+/* when hover */
+      button:hover  {
+background-color:#OOBFFF;   /*blue fill on hover */
+        color:black;
+box-shadow:0 0  25px  #OOBFFF,0 0 50px
+#OOBFFF;
+}
+/* Animation keyframes*/
+@keyframes glowPulse  {
+0% {
+ box-shadow:0 0  5px
+rgba(0,191,255,0.3);
+}
+50% {
+   box-shadow:0 0  20px
+rgba(0,191,255,0.7);
+}
+100% {
+      box-shadow:0 0  5px
+rgba(0,191,255,0.3);
+      }
+}
+.page{
+  display:none;
+}
+.active{
+display:block;
+}
+hr{
+        border:1px    solid white;
+}
+                                               </style>
+              </head>
+<body>
+<! - - Main page - ->
+<div id = "home" class = "page active">
+<h1 style="color: black;"><i>BMW</i></h1>
+
+<p><b>BEST CAR MAKING MOTORSPORT COMPANY</b></p>
+<u><h3> OUR BEST CAR </u></h3>
+<ul   style = "list-style:none;">
+                   <li>BMW M4</li>
+<button onclick="showPage('m4')">select your variant(m4)</button>
+
+                   <li>BMW M5</li>
+<button onclick="showPage('m5')">select your variant (m5)</button>
+</ul>
+<hr>
+<i><h5>world best car that can beat every car if doubt come and test</i></h5>
+<hr>
+<b><h3>Thanks for visiting us</h3></b>
+<hr>
+<p>phone = 8700823167</p>
+<p>Email = Bmwmotorsportindia@gmail.com</p>
+<p>Address = Building, N, 2nd Floor, Oberoi Centre, 11, DLF Phase 2, Gurugram, Haryana 122002</p>
+<hr>
+<p>bmw.india</p>
+<hr>
+<button onclick="alert('credit to saksham sharma master of html  css  Javascript   python')">credit</button>
+</div>
+<!- - M4 PAGE - ->
+<div  id = "m4"  class = "page">
+<h2>BMW M4 VARIANTS </h2>
+
+<button onclick="alert('payment done but fake for this do trading one day it becomes real!')"> M4 competition price=1.56 cr</button>
+<button onclick="alert('payment done dream take time it\'s not maggie!')">M4 cs price=1.89cr</button>
+
+<br><br>
+<button onclick = "showPage('home')">Back to home page</button>
+</div>
+<! - - M5 PAGE - ->
+<div  id = "m5"  class = "page">
+<h2>BMW M5 VARIANTS </h2>
+<button onclick="alert('payment done trading karo padhai se nhi ayegi')">M5 cs price=1.99cr</button>
+<button onclick="alert('payment done job se nhi ayegi!')"> M5 competition price=1.89cr</button>
+
+<br><br>
+<button onclick = "showPage('home')">Back to home page</button>
+</div>
+<! - - Javascript to switch page - ->
+<script>
+ function   showPage(pageId)     {
+   //Hide all pages
+document.querySelectorAll('.page').forEach (page   =>  {
+                    page.classList.remove('active');
+              } );
+    document.getElementById(pageId).classList.add('active');
+                      }
+</script>
+</body>
+</html>
