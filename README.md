@@ -5,7 +5,7 @@ BMW Project — A sleek 3-page website built using HTML, CSS, and JavaScript. My
 **First 3-page HTML, CSS, and JavaScript website** inspired by BMW.
 
 ## 🌐 Live Demo
-🔗 [View Website](https://transcendent-tarsier-1006da.netlify.app)
+🔗 [View Website](https://calm-cucurucho-e68d1d.netlify.app)
 
 ## 🛠️ Built With
 - HTML
